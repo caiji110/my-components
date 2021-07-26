@@ -1,0 +1,21 @@
+<view class="select-tag">
+    <block>
+      <view 
+        wx:if="{{ !tags.multichoice }}"
+        wx:for="{{ tags.type }}" 
+        wx:key='index'
+        data-index='{{ index }}'
+        class="my-tag  {{ selected == index ? 'selected':'' }}"
+        bindtap="onClickSelectType"
+      >{{ item }}</view>
+      <view 
+        wx:if="{{ tags.multichoice }}"
+        wx:for="{{ tags.type }}" 
+        wx:key='index'
+        data-index='{{ index }}'
+        class="my-tag  {{ TagList[index].checked ? 'selected':'' }}"
+        bindtap="onClickSelectType"
+      >{{ item }}</view>
+    </block>
+    
+  </view>

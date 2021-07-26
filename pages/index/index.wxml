@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<Tag bindonClickSelectTypeMulit='SelectMyTags' tags="{{ MyTagsList }}"/>
+<block
+  wx:for="{{ SelectMyTag }}"
+  wx:key="index">
+    <view>目前选择：{{ item.type }}</view>
+</block>
