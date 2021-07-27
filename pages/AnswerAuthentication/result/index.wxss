@@ -1,0 +1,27 @@
+.contact-likeyou{
+  width: 280rpx;
+  height: 224rpx;
+  background: #adadad;
+  margin: 162rpx auto 80rpx auto;
+}
+
+.right-title{
+  width: 290rpx;
+  font-family: "PingFang SC";
+font-weight: bold;
+font-size: 36rpx;
+text-align: left;
+color: #12181f;
+margin: 0 auto;
+}
+.right-num{
+  width: 290rpx;
+  margin:0 auto;
+  margin-top:16rpx;
+  text-align: center;
+  font-family: "PingFang SC";
+font-weight: bold;
+font-size: 50rpx;
+color: #f15757;
+transform: translate(-25rpx,0);
+}

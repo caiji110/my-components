@@ -1,0 +1,41 @@
+<!--pages/AnswerAuthentication/index.wxml-->
+  
+<view wx:if="{{isshow}}">
+  <view class="header">
+  <view>{{index+1}}/{{QuestionsArray.length}}</view>
+  <view class="time">
+    <view class="time-icon">
+      <image src="../../icon/jishiqi.png"></image>
+    </view>
+    <view class="end-time">{{ limitTime }}S</view>
+  </view>
+</view>
+<swiper 
+  style="height:100vh"
+  current="{{current}}"
+  bindchange="onChangeCurrent"
+  >
+  <swiper-item 
+    wx:for="{{ QuestionsArray }}"
+    wx:key="index">
+    <view class="problem-box">
+      <view class="problem">{{ item.question }}</view>
+        <view class="answer" bindtap="SelectAnswer">
+          <block  
+             wx:for="{{ item.options }}"
+             wx:for-index='select'
+             wx:key="select">
+            <view 
+              data-options="{{'selected='+select+'&'+ 'index='+index}}"
+              hover-class='change-color' 
+              hover-stay-time="200">{{ item }}</view>
+          </block>
+          
+        </view>
+    </view>
+  </swiper-item>
+  
+</swiper>
+</view>
+
+

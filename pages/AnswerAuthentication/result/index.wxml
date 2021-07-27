@@ -1,0 +1,6 @@
+<!--pages/AnswerAuthentication/result/index.wxml-->
+<view class="answer-result">
+  <view class="contact-likeyou"></view>
+  <view class="right-title">你的正确答题数：</view>
+  <view class="right-num">{{ RightNum }}</view>
+</view>

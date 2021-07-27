@@ -9,6 +9,17 @@ Page({
       multichoice: true
      },
      SelectMyTag:[],
+     nbFrontColor: '#000000',
+     nbBackgroundColor: '#ffffff',
+     bgTextStyle: 'dark',
+     scrollTop: '2000rpx',
+     bgColor: '#ff0000',
+     bgColorTop: '#00ff00',
+     bgColorBottom: '#0000ff',
+     nbTitle: '标题',
+     nbLoading: true,
+     nbFrontColor: '#000000',
+     nbBackgroundColor: '#ffffff',
   },
    //选择个人标签
   SelectMyTags(e){
@@ -18,4 +29,6 @@ Page({
     })
     console.log(e.detail.type);
   },
+
+
 })
