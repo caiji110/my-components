@@ -25,6 +25,7 @@
   background: #fff;
   border: 10rpx solid #a979ed;
   margin: 0 auto;
+  padding-bottom: 50rpx;
 }
 .problem{
   font-family: "PingFang SC";
@@ -53,9 +54,7 @@ color: #a979ed;
  background-color: #8d64c7d2;
  color: white;
 }
-.answer-result{
 
-}
 .contact-likeyou{
   width: 280rpx;
   height: 224rpx;
