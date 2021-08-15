@@ -2,5 +2,23 @@
 <view class="answer-result">
   <view class="contact-likeyou"></view>
   <view class="right-title">你的正确答题数：</view>
-  <view class="right-num">{{ RightNum }}</view>
+  <view class="right-num" style="color:{{color}}">{{ RightNum }}</view>
+</view>
+<view  
+    wx:if="{{!state}}" 
+    class="answer-state-false" 
+    style="color:{{color}}"> 
+  <view class="sorry">很抱歉</view> 
+  <view>你作答的正确题数未能达到校园认证标准</view> 
+</view>
+<view 
+  wx:if="{{state}}"
+  class="answer-state-true" 
+  >
+  <view style="color:{{ color }}">
+    <view>恭喜你,您已经通过校园认证。</view>
+    <view>快发起组局期待局友的加入吧。</view>
+  </view>
+ 
+  <view class="built-game-btn">发起组局</view>
 </view>

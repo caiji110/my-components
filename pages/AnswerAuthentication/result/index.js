@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    RightNum:0
+    RightNum:0,
+    state:false,
+    color:''
   },
 
   /**
@@ -21,6 +23,12 @@ Page({
     this.setData({
       RightNum:newarr.length
     })
+    if(newarr.length/resultArry.length>0.6){
+      this.setData({
+        state:true,
+        color:'#9573E7'
+      })
+    }
   },
 
   /**
